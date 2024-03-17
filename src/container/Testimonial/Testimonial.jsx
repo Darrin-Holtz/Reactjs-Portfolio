@@ -62,7 +62,11 @@ const Testimonial = () => {
             transition={{ duration: 0.5, type: 'tween' }}
             key={brand._id}
           >
-            <img src={urlFor(brand.imgUrl)} alt={brand.name} />
+            <img src={urlFor(brand.imgUrl)}
+            alt={brand.name} 
+            width="150"
+            height="auto"
+            />
           </motion.div>
         ))}
       </div>
